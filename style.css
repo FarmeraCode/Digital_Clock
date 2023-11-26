@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#main{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(35deg, #1e1c52, #0a0857);
+    color: #fff;
+    position: relative;
+}
+
+#container{
+    background-color: rgba(255, 255, 255, 0.293);
+    width: 810px;
+    height: 200px;
+    position: absolute;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+#clock{
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    height: 200px;
+    width: 810px;
+    backdrop-filter: blur(30px);
+}
+
+#container::before{
+    content: "";
+    height: 200px;
+    width: 200px;
+    background-color: rgba(33, 255, 233, 0.8);
+    z-index: -1;
+    position: absolute;
+    transform: translate(-40%, -40%);
+    border-radius: 10px;
+}
+
+#container::after{
+    content: "";
+    height: 200px;
+    width: 200px;
+    background-color: rgba(255, 255, 0, 0.691);
+    z-index: -1;
+    position: absolute;
+    border-radius: 50%;
+    bottom: -80%;
+    right: 50%;
+
+} 
+
+#container2{
+    background-color: rgba(255, 255, 255, 0.293);
+    width: 810px;
+    height: 200px;
+    position: absolute;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+#container2::before{
+    content: "";
+    height: 300px;
+    width: 200px;
+    background-color: rgba(255, 0, 0, 0.756);
+    z-index: -1;
+    position: absolute;
+    transform: translate(330%, -30%);
+    border-radius: 10px;
+}
+
+#clock span{
+    font-size: 60px;
+    padding: 6%;
+    position: relative;
+    display: inline-block;
+}
+
+#hrs::after{
+    position: absolute;
+    content: "Hour";
+    font-size: 30px;
+    color:white;
+    bottom: 15px;
+    right: 47px;
+}
+
+#min::after{
+    position: absolute;
+    content: "Min";
+    font-size: 30px;
+    color:white;
+    bottom: 15px;
+    right: 47px;
+}
+
+#sec::after{
+    position: absolute;
+    content: "Sec";
+    font-size: 30px;
+    color:white;
+    bottom: 15px;
+    right: 47px;
+}
